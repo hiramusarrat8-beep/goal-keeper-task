@@ -1,6 +1,6 @@
 # Goalkeeper Game
 
-A Unity implementation of the "Goalkeeper Game" decision-making task used in fMRI
+A Unity implementation of the "Goalkeeper Game" decision-making task used in fMRI/TUS
 research. On each trial, the participant predicts which way a penalty shooter will
 go, the shooter is revealed, and the participant can stay with their prediction or
 switch before the outcome plays out. Built on [UXF](https://github.com/immersivecognition/unity-experiment-framework)
