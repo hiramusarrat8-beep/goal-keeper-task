@@ -1,0 +1,20 @@
+{
+  "trials_per_block": 40,
+  "paired_prob": 0.8,
+  "rare_prob": 0.2,
+  "preference_prob": 0.8,
+
+  "initial_window": 5.0,
+
+  "isi_1": 1.0,
+
+  "reveal_window": 2.0,
+
+  "isi_2": 1.0,
+
+  "outcome_duration": 2.0,
+
+  "iti": 2.0,
+
+  "seed": 42
+}
