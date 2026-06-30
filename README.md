@@ -7,8 +7,9 @@ switch before the outcome plays out. Built on [UXF](https://github.com/immersive
 for trial/block sequencing and CSV data logging.
 
 This repository implements the **Goal Keeper Task** described in the original publication:
+*https://www.biorxiv.org/content/10.1101/2025.08.19.664920v1*
 
-> *https://www.biorxiv.org/content/10.1101/2025.08.19.664920v1*
+The task uses a **Markov chain** to generate trial sequences, meaning that the probability of the next outcome depends on the current state rather than being completely random. This creates learnable patterns that participants must discover and adapt to during the experiment.
 
 ## Screenshots
 <img width="1918" height="1020" alt="image" src="https://github.com/user-attachments/assets/edcbda59-9af4-4d85-a753-a5e45e1739a1" />
