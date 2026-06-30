@@ -6,6 +6,13 @@ go, the shooter is revealed, and the participant can stay with their prediction 
 switch before the outcome plays out. Built on [UXF](https://github.com/immersivecognition/unity-experiment-framework)
 for trial/block sequencing and CSV data logging.
 
+## Screenshots
+<img width="1918" height="1020" alt="image" src="https://github.com/user-attachments/assets/edcbda59-9af4-4d85-a753-a5e45e1739a1" />
+
+<img width="1918" height="971" alt="image" src="https://github.com/user-attachments/assets/0d5451c8-1fd8-4de8-98fc-8475e5135757" />
+
+
+
 ## Requirements
 
 - Unity **2022.3.62f2** (see `ProjectSettings/ProjectVersion.txt`)
