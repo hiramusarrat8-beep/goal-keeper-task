@@ -6,6 +6,10 @@ go, the shooter is revealed, and the participant can stay with their prediction 
 switch before the outcome plays out. Built on [UXF](https://github.com/immersivecognition/unity-experiment-framework)
 for trial/block sequencing and CSV data logging.
 
+This repository implements the **Goal Keeper Task** described in the original publication:
+
+> *https://www.biorxiv.org/content/10.1101/2025.08.19.664920v1*
+
 ## Screenshots
 <img width="1918" height="1020" alt="image" src="https://github.com/user-attachments/assets/edcbda59-9af4-4d85-a753-a5e45e1739a1" />
 
@@ -31,10 +35,18 @@ for trial/block sequencing and CSV data logging.
 2. **Practice block** — 10 untimed trials using a fixed, identical-for-everyone
    sequence, with full outcome/score feedback so participants learn the mechanic
    before the timer is introduced.
-3. **Real task** — 4 blocks (160 trials by default) with the paper's timing:
-   initial prediction → ISI → shooter reveal (stay/switch window) → ISI → outcome →
-   ITI, with jittered ISI/ITI by default. A short reminder screen appears once
-   before the first real trial, flagging that decisions are now timed.
+3. **Real task** — 4 blocks (160 trials)
+## Trial Timeline
+
+| Phase | Duration | Description |
+|-------|:--------:|------------|
+| Initial prediction window | **3.0 s** | Participant predicts the direction of the upcoming shot. |
+| ISI 1 (before shooter reveal) | **1.0 s** | Inter-stimulus interval before the shooter is revealed. |
+| Shooter reveal / Stay-or-Switch window | **1.5 s** | Shooter identity is displayed, allowing participants to maintain or change their prediction. |
+| ISI 2 (before outcome) | **1.0 s** | Inter-stimulus interval before the outcome is presented. |
+| Outcome display | **2.0 s** | The shot outcome is revealed and feedback is shown. |
+| ITI (Inter-Trial Interval) | **2.0 s** | Blank interval before the next trial begins. |
+
 
 Practice trials are tagged `is_practice` in the results CSV so they can be filtered
 out of analysis — UXF logs every trial it runs, including practice ones.
