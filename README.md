@@ -24,9 +24,32 @@ The task uses a **Markov chain** to generate trial sequences, meaning that the p
 
 ## Getting started
 
-1. Open the project folder in Unity Hub.
-2. Open `Assets/Scenes/SampleScene.unity`.
-3. Press Play to run the task.
+Setup Instructions
+
+1. Clone the repository and open the project in **Unity Hub**.
+
+2. Drag the **UXF Rig** prefab (`UXF/Prefabs/UXF_Rig`) into the **Hierarchy**.
+
+3. From the Unity toolbar, select **GoalKeeper → Build Scene**, then **GoalKeeper → Wire References**.
+
+4. Switch to the **Game** view, press **Play** once, then stop the session. Return to the **Scene** view.
+
+5. In the **Hierarchy**, select **UXF Rig**. In the **Inspector**, scroll down to **Events**. Under **On Session Begin**:
+   - Click the **+** button.
+   - Drag the **Game Manager** object from the Hierarchy into the **None (Object)** field.
+   - From the **No Function** dropdown, select:
+     - **GoalkeeperSessionGenerator → GenerateExperiment()**
+
+6. Under **On Trial Begin**:
+   - Click the **+** button.
+   - Drag the **Game Manager** object into the **None (Object)** field.
+   - From the **No Function** dropdown, select:
+     - **GoalkeeperTrialRunner → OnTrialBegin()**
+
+7. Save the scene (**Ctrl + S**).
+
+8. Return to the **Game** view and press **Play** to start the experiment.
+   
 
 ## Task flow
 
